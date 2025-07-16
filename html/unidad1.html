@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ingeniosos</title>
+    <link rel="stylesheet" href="/css/unidad1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imagen/hacker.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-logo"> LOS INGE-NIOSOS</div>
+                <ul class="navbar-link" id="navbar-link">
+
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="unidad1.html">Unidad 1</a></li>
+                    <li><a href="unidad2.html">Unidad 2</a></li>
+                    <li><a href="unidad3.html">Unidad 3</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </header>
+        <div class="titulo-content">
+            <h1 class="main-title">Coaching y Liderazgo Empresarial</h1>
+        </div>
+        <section id="inicio" class="content-section" data-aos="fade-right">
+            <div class="image-container">
+                <img src="/imagen/retroalimentacion.jpg" alt="Retroalimentación">
+
+            </div>
+            <div class="text-container">
+                <h2>La Retroalimentación</h2>
+                <p>Indica un metodo de control de sistemas, lo cual tendra resultados
+                    derivados de una actividad se reintroducen de nuevo, para mantener
+                    un control y compresión de su comportamiento. Por eso, la retroalimentación 
+                    puede aplicarse a casi todos los procesos que posean mecánicas de ajuste y 
+                    autorregulación de algún sistema. También podemos encontrarla con el nombre
+                    de realimentación, retroacción o feedback.
+                </p>
+            </div>
+        </section>
+        <section id="inicio" class="content-section" data-aos="fade-left">
+
+            <div class="text-container">
+                <h2>¿Por que es importante la Retroalimentación?</h2>
+                <p>Es importante por que ayuda a las personas a mejorar su desempeño, a
+                    evaluarse a si mismos y a su trabajo, también permite identificar fortalezas
+                    y áreas de mejora, favoreciendo el aprendizaje, el crecimiento personal y 
+                    profesional, y la mejora continua. Además, fortalece la comunicación, aumenta 
+                    la motivación y el compromiso, y es clave para una toma de decisiones más efectiva. 
+                    Ya sea en entornos educativos, laborales o personales, recibir y dar retroalimentación
+                    ayuda a corregir errores, potenciar habilidades y fomentar relaciones más constructivas
+                    y colaborativas.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="/imagen/importancia-retro.jpg" alt="Retroalimentación">
+
+            </div>
+
+        </section>
+        <section id="inicio" class="content-section" data-aos="fade-right">
+            <div class="image-container">
+                <img src="/imagen/retroalimentar-educativo.png" alt="Retroalimentación">
+
+            </div>
+            <div class="text-container">
+                <h2>Ambito Educativo</h2>
+                <p>Es un dialogo que permite identificar los avances y las areas de
+                    oportunidad de los estudiantes.
+                </p>
+            </div>
+        </section>
+        <section id="inicio" class="content-section" data-aos="fade-left">
+            <div class="text-container">
+                <h2>Ambito Laboral</h2>
+                <p>La Retroalimentación y el Reconocimiento agradecido pueden
+                    fortalecer la senseacion de que alguien es valorado.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="/imagen/retroalimentacion-laboral.jpg" alt="Retroalimentación">
+            </div>
+        </section>
+        <section id="inicio" class="content-section" data-aos="fade-right">
+            <div class="image-container">
+                <img src="/imagen/retroalimentacion-medico.jpg" alt="Retroalimentación">
+            </div>
+            <div class="text-container">
+                <h2>Ambito Medico</h2>
+                <p>Ayuda a los profesionales del area de salud a anticipar y
+                    responder adecuadamente a diversas condicione y enfermedades. </p>
+            </div>
+        </section>
+        <section id="inicio" class="content-section" data-aos="fade-left">
+            <div class="text-container">
+                <h2>La Retroalimentación positiva y negativa</h2>
+                <h3></h3>
+                <p>Ayuda a los profesionales del area de salud a anticipar y
+                    responder adecuadamente a diversas condicione y enfermedades. </p>
+            </div>
+            <div class="image-container">
+                <img src="/imagen/retroalimentar-educativo.png" alt="Retroalimentación">
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navbar-link");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
+
+        <footer class="conteiner-principal">
+      <div class="footer-left">
+        <img src="/imagen/utplogo.png" alt="logo">
+      </div>
+      <div class="footer-center">
+            <p>&copy; 2025 Todos los derechos reservados.</p>
+            <p>Estudiantes de Ingenieria de Sistemas de la UTP Ica</p>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #E0DFD5,#d4ae67);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  linear-gradient(135deg, #36454F, #667a94);
+    padding: 2rem 3rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.navbar-logo{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.navbar-link{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.navbar-link li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar-link li a:hover {
+  background-color: #F09D51;
+  padding: 5px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #191970,#27275f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.2s ease-in-out;
+  margin-top: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  color: #191970;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333333;
+}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #6a9edb; 
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #e0f0ff;
+  }
+  tr:nth-child(odd) {
+    background-color: #d0e0f0; 
+  }
+
+  .table-second {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #72d49f;
+  }
+  tr:nth-child(odd) {
+    background-color: #bae2c1; 
+  }
+  td:nth-child(2) { 
+    vertical-align: top;
+  }
+  }
+  .conteiner-principal {
+  background-color: #1a2a3a; /* Un color de fondo oscuro similar al de tu imagen */
+    color: #ffffff; /* Texto blanco para contrastar */
+    padding: 15px 10px; /* Espacio interior */
+    display: flex; /* Para usar Flexbox y alinear las columnas */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    gap: 30px; 
+}
+.footer{
+  
+    flex: 1; /* Permite que las secciones crezcan y tomen el espacio disponible */
+    min-width: 200px; /* Anchura mínima para evitar que se aprieten demasiado */
+
+}
+
+.footer-left{
+  text-align: center;
+}
+.footer-left img {
+    max-width: 150px; /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Para centrar la imagen */
+}
+.footer-center{
+   margin-bottom: 5px; /* Pequeño espacio entre los párrafos de copyright */
+    font-size: 0.9em; 
+    text-align: center;
+    padding: 2rem;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 768px){
+    .navbar-link{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background:  linear-gradient(135deg, #36454F, #667a94);
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        text-align: center;
+        padding: 1rem 0;
+    } 
+    .navbar-link.active {
+    display: flex;
+    }
+    .hamburger {
+    display: block;
+    }
+    .content-section{
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 0;
+      
+    }
+     .content-section p{
+        margin: 2rem;
+        text-align: center;
+      }
+    .conteiner-principal {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        margin: 0;
+    }
+
+   
+}
+
+  

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los ingeniosos</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/x-icon" href="/imagen/hacker.ico">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+
+      <nav class="navbar">
+        <div class="navbar-logo"> LOS INGE-NIOSOS</div>
+        <ul class="navbar-link" id="navbar-link">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="html/unidad1.html">Unidad 1</a></li>
+          <li><a href="html/unidad2.html">Unidad 2</a></li>
+          <li><a href="html/unidad3.html">Unidad 3</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          &#9776;
+        </div>
+      </nav>
+    </header>
+    <div class="titulo-content">
+      <h1 class="main-title">Liderazgo y Gestión de Equipo</h1>
+    </div>
+
+    <section class="content-section">
+      <div class="image-container">
+        <img src="/imagen/lider.png" alt="fondo">
+      </div>
+      <div class="text-container">
+        <h3>
+          <p>El liderazgo es el conjunto de habilidades que permiten a
+            un individuo guiar, influir y motivar a un grupo para alcanzar
+            objetivos comunes. Un líder es capaz de inspirar y generar un
+            cambio positivo en diversos contextos, ya sea una empresa, una
+            familia, una organización, un equipo deportivo o una comunidad.
+            El líder no solo toma la iniciativa para emprender acciones,
+            sino que también gestiona, evalúa y ajusta las estrategias según
+            sea necesario. Se destaca por su experiencia, conocimientos y
+            desempeño, por lo que suele convertirse en un modelo a seguir para quienes lo rodean.
+          </p>
+        </h3>
+
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="text-container">
+        <h2>¿Qué es la Gestión en equipo?</h2>
+        <h3>
+          <p>La gestión de equipos es el conjunto de acciones y decisiones
+            llevadas a cabo por la persona encargada de la dirección de un
+            grupo de profesionales en el trabajo. Para que sea eficaz, tiene
+            que contar con unos profesionales que ayuden a cumplir las tareas
+            necesarias y alcanzar unos objetivos finales y los líderes de estos
+            equipos tienen que ser capaces de delegar, comunicar y orientar de
+            forma adecuada y eficaz.
+
+          </p>
+        </h3>
+
+      </div>
+    </section>
+
+    <div class="subtittle-content">
+      <h2>Integrantes del Equipo</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/george-foto.png" alt="Card Image 1">
+          <div class="overlay-text">
+            <span>George Castro</span>
+          </div>
+        </div>
+        <a href="html/george.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/ronald-foto.png" alt="Card Image 2">
+          <div class="overlay-text">
+            <span>Ronald Delgado</span>
+          </div>
+        </div>
+        <a href="html/ronald.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/aldair.png" alt="Card Image 3">
+          <div class="overlay-text">
+            <span>Aldair Sulca</span>
+          </div>
+        </div>
+        <a href="html/aldair.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/patrick.png" alt="Card Image 4">
+          <div class="overlay-text">
+            <span>Patrick Rodriguez</span>
+          </div>
+        </div>
+        <a href="html/patrick.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/aquiles.jpeg" alt="Card Image 5">
+          <div class="overlay-text">
+            <span>Aquiles Choque</span>
+          </div>
+        </div>
+        <a href="html/aquiles.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/jean-foto.png" alt="Card Image 6">
+          <div class="overlay-text">
+            <span>Jean Pier Vega</span>
+          </div>
+        </div>
+        <a href="html/jeanpier.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/yadira.png" alt="Card Image 7">
+          <div class="overlay-text">
+            <span>Yadira Machado</span>
+          </div>
+        </div>
+        <a href="html/yadira.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+      <div class="card">
+        <div class="image-overlay-container">
+          <img src="imagen/aaron.jpeg" alt="Card Image 8">
+          <div class="overlay-text">
+            <span>Aaron Gavancho</span>
+          </div>
+        </div>
+        <a href="html/aaron.html">
+          <button>Conoce Más</button>
+        </a>
+      </div>
+
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navbar-link");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
+
+    </div>
+
+    <footer class="conteiner-principal">
+      <div class="footer-left">
+        <img src="imagen/utplogo.png" alt="logo">
+      </div>
+      <div class="footer-center">
+            <p>&copy; 2025 Todos los derechos reservados.</p>
+            <p>Estudiantes de Ingenieria de Sistemas de la UTP Ica</p>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
